@@ -26,4 +26,6 @@ res = requests.get(url)
 
 
 #二进制写入模式 打开文件 video.mp4，如果文件不存在会自动创建。
-open('video3.mp4', 'wb').write(res.content)
+#make some looping to loop the downloaded content into 3 files
+
+open('video'+ [i] '.mp4', 'wb').write(res.content)
